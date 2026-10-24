@@ -1,0 +1,127 @@
+/* ==========================================================================
+   HYBRID MODERN CSS RESET
+   Combines: Josh W. Comeau (https://www.joshwcomeau.com/css/custom-css-reset/),
+   Andy Bell (https://bell.bz/a-modern-css-reset/),
+   and Modern CSS Web Standards (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CASCADE LAYER SETUP
+   Author: Modern CSS Platform Standards
+   Why: Gives this reset lowest cascade priority so your styles override it
+   effortlessly without needing high specificity or !important.
+   -------------------------------------------------------------------------- */
+@layer reset {
+
+  /* ------------------------------------------------------------------------
+     2. BOX SIZING & MARGIN ZEROING
+     Author: Josh W. Comeau
+     Why: Forces padding/borders into element widths (no overflow bugs) and
+     strips default margins so components snap together without gap surprises.
+     ------------------------------------------------------------------------ */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /* ------------------------------------------------------------------------
+     3. ACCESSIBLE REDUCED MOTION
+     Author: Andy Bell
+     Why: Respects user operating system settings for vestibular motion safety
+     by safely collapsing animations and smooth scrolls to instant execution.
+     ------------------------------------------------------------------------ */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     4. ROOT & VIEWPORT BASICS
+     Authors:
+     - color-scheme & scrollbar-gutter: Modern CSS Platform Standards
+     - min-height: 100dvh: Modern CSS Platform Standards (updates Josh's 100%)
+     - line-height & font-smoothing: Josh W. Comeau
+     Why: Prevents scrollbar layout jumps, honors OS dark mode natively,
+     handles mobile address bar resizing (dvh), and cleans up typography.
+     ------------------------------------------------------------------------ */
+  html {
+    color-scheme: light dark;
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    min-height: 100dvh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ------------------------------------------------------------------------
+     5. MEDIA ELEMENTS & SVG GAP FIX
+     Author: Josh W. Comeau (with Modern max-inline-size)
+     Why: display: block removes the baseline 3-4px gap underneath images;
+     max-inline-size prevents high-res assets from overflowing containers.
+     ------------------------------------------------------------------------ */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-inline-size: 100%;
+    height: auto;
+  }
+
+  /* ------------------------------------------------------------------------
+     6. ACCESSIBLE LISTS
+     Author: Andy Bell
+     Why: Only strips bullets and padding if you explicitly add role="list",
+     preserving VoiceOver screen-reader list semantics for regular text lists.
+     ------------------------------------------------------------------------ */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* ------------------------------------------------------------------------
+     7. TYPOGRAPHIC WRAPPING
+     Author: Modern CSS Platform Standards
+     Why: balance evens out headline line lengths cleanly; pretty stops
+     single-word orphans from hanging on the last line of paragraphs.
+     ------------------------------------------------------------------------ */
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+
+  /* ------------------------------------------------------------------------
+     8. FORM CONTROL INHERITANCE
+     Author: Josh W. Comeau
+     Why: Forces buttons, inputs, textareas, and selects to use your page's
+     designated font families and colors instead of browser system defaults.
+     ------------------------------------------------------------------------ */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+}
