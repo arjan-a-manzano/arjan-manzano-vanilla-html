@@ -12,7 +12,6 @@
    effortlessly without needing high specificity or !important.
    -------------------------------------------------------------------------- */
 @layer reset {
-
   /* ------------------------------------------------------------------------
      2. BOX SIZING & MARGIN ZEROING
      Author: Josh W. Comeau
@@ -89,8 +88,8 @@
      Why: Only strips bullets and padding if you explicitly add role="list",
      preserving VoiceOver screen-reader list semantics for regular text lists.
      ------------------------------------------------------------------------ */
-  ul[role='list'],
-  ol[role='list'] {
+  ul[role="list"],
+  ol[role="list"] {
     list-style: none;
     padding: 0;
   }
@@ -101,7 +100,12 @@
      Why: balance evens out headline line lengths cleanly; pretty stops
      single-word orphans from hanging on the last line of paragraphs.
      ------------------------------------------------------------------------ */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-wrap: balance;
     overflow-wrap: break-word;
   }
@@ -124,4 +128,256 @@
     font: inherit;
     color: inherit;
   }
+}
+
+
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Regular.eot");
+  src:
+    local("Exec Demiserif"),
+    local("Exec-Demiserif-Regular"),
+    url("fonts/Exec-Demiserif-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Regular.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Regular.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Thin.eot");
+  src:
+    local("Exec Demiserif Thin"),
+    local("Exec-Demiserif-Thin"),
+    url("fonts/Exec-Demiserif-Thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Thin.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Thin.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Bold.eot");
+  src:
+    local("Exec Demiserif Bold"),
+    local("Exec-Demiserif-Bold"),
+    url("fonts/Exec-Demiserif-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Bold.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Bold.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Extralight.eot");
+  src:
+    local("Exec Demiserif Extralight"),
+    local("Exec-Demiserif-Extralight"),
+    url("fonts/Exec-Demiserif-Extralight.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Extralight.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Extralight.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Light.eot");
+  src:
+    local("Exec Demiserif Light"),
+    local("Exec-Demiserif-Light"),
+    url("fonts/Exec-Demiserif-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Light.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Light.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Semibold.eot");
+  src:
+    local("Exec Demiserif Semibold"),
+    local("Exec-Demiserif-Semibold"),
+    url("fonts/Exec-Demiserif-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Semibold.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Semibold.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exec Demiserif";
+  src: url("Exec-Demiserif-Medium.eot");
+  src:
+    local("Exec Demiserif Medium"),
+    local("Exec-Demiserif-Medium"),
+    url("fonts/") format("embedded-opentype"),
+    url("fonts/Exec-Demiserif-Medium.woff2") format("woff2"),
+    url("fonts/Exec-Demiserif-Medium.woff") format("woff"),
+    url("fonts/Exec-Demiserif-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+:root {
+  --font-primary: 'Exec Demiserif', sans-serif;
+
+  /* 
+    Clamp: https://typeyeah.com/tools/type-scale-calculator
+    Screen range settings:
+      Min screen: 320px
+      Max screen: 1920px
+    
+    Preferred value in clamp function is calculated based on these settings
+  */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.75rem;
+  --text-base: 1rem;
+  --text-lg: 1.333rem;
+  --text-xl: 1.777rem;
+  --text-2xl: clamp(1.728rem, 1.5999rem + 0.6406vw, 2.3686rem);
+  --text-3xl: clamp(2.0736rem, 1.8569rem + 1.0837vw, 3.1573rem);
+  --text-4xl: clamp(2.4883rem, 2.1442rem + 1.7204vw, 4.2087rem);
+  --text-5xl: clamp(2.986rem, 2.4611rem + 2.6242vw, 5.6102rem);
+  /* --text-6xl: ;
+  --text-7xl: ;
+  --text-8xl: ;
+  --text-9xl: ; */
+  
+  --line-height-base: 1.5;
+  --line-height-lg: 1.45;
+  --line-height-xl: 1.40;
+  --line-height-2xl: 1.35;
+  --line-height-3xl: 1.30;
+  --line-height-4xl: 1.25;
+
+  /* 
+    em calculations: https://github.com/tailwindlabs/tailwindcss-typography/blob/main/src/styles.js 
+    em = px/base  
+    */
+  --margin-top-h1: 0em;
+  --margin-bottom-h1: 0.8em;
+  --margin-top-h2: 1.6em;
+  --margin-bottom-h2: 0.8em;
+  --margin-top-h3: 1.56em;
+  --margin-bottom-h3: 0.44em;
+  --margin-top-h4: 1.43em;
+  --margin-bottom-h4: 0.57em;
+  --margin-top-p: 1.14em;
+  --margin-bottom-p: 1.14em;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  font-weight: bold;
+  line-height: var(--line-height-3xl);
+  margin-top: var(--margin-top-h1);
+  margin-bottom: var(--margin-bottom-h1);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-2xl);
+  margin-top: var(--margin-top-h2);
+  margin-bottom: var(--margin-bottom-h2);
+}
+
+h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xl);
+  margin-top: var(--margin-top-h3);
+  margin-bottom: var(--margin-bottom-h3);
+}
+
+h4 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xl);
+  margin-top: var(--margin-top-h4);
+  margin-bottom: var(--margin-bottom-h4);
+}
+
+p {
+  font-size: var(--text-base);
+  line-height: var(--line-height-base);
+  margin-top: var(--margin-top-p);
+  margin-bottom: var(--margin-bottom-p);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+} 
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-base {
+  font-size: var(--text-base);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+.text-2xl {
+  font-size: var(--text-2xl);
+}
+
+.text-3xl {
+  font-size: var(--text-3xl);
+}
+
+.text-4xl {
+  font-size: var(--text-4xl);
+}
+
+.text-5xl {
+  font-size: var(--text-5xl);
+}
+
+.uppermost-margin-override {
+  margin-top: 0;
+}
+
+.bottommost-margin-override {
+  margin-bottom: 0;
 }
