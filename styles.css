@@ -405,6 +405,17 @@ p {
   margin-bottom: 0;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
 
 /* Background Colors */
 
