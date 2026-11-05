@@ -437,6 +437,30 @@ p {
   display: none;
 }
 
+.grid {
+  display: grid;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .overflow-clip {
   overflow: clip;
 }
@@ -545,6 +569,22 @@ p {
 
 .object-bottom-right {
   object-position: bottom right;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 .z-0 {
