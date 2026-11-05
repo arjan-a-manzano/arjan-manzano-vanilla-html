@@ -473,8 +473,78 @@ p {
   overflow-y: visible;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+/* Object position utilities */
+
+.object-top-left {
+  object-position: top left;
+}
+
+.object-top {
+  object-position: top;
+}
+
+.object-top-right {
+  object-position: top right;
+}
+
+.object-left {
+  object-position: left;
+}
+
+.object-center {
+  object-position: center;
+}
+
+.object-right {
+  object-position: right;
+}
+
+.object-bottom-left {
+  object-position: bottom left;
+}
+
+.object-bottom {
+  object-position: bottom;
+}
+
+.object-bottom-right {
+  object-position: bottom right;
 }
 
 .z-0 {
