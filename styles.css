@@ -296,6 +296,8 @@
   --arjan-warm-ivory-white-primary: #FFF8EF;
   --arjan-warm-ivory-white-secondary: #DED8CF;
   --arjan-warm-ivory-white-tertiary: #C7C1B8;
+
+  --max-width-text: 65ch;
 }
 
 body {
@@ -308,6 +310,8 @@ h1 {
   line-height: var(--line-height-3xl);
   margin-top: var(--margin-top-h1);
   margin-bottom: var(--margin-bottom-h1);
+  width: fit-content;
+  max-width: var(--max-width-text);
 }
 
 h2 {
@@ -316,6 +320,8 @@ h2 {
   line-height: var(--line-height-2xl);
   margin-top: var(--margin-top-h2);
   margin-bottom: var(--margin-bottom-h2);
+  width: fit-content;
+  max-width: var(--max-width-text);
 }
 
 h3 {
@@ -324,6 +330,8 @@ h3 {
   line-height: var(--line-height-xl);
   margin-top: var(--margin-top-h3);
   margin-bottom: var(--margin-bottom-h3);
+  width: fit-content;
+  max-width: var(--max-width-text);
 }
 
 h4 {
@@ -332,6 +340,8 @@ h4 {
   line-height: var(--line-height-xl);
   margin-top: var(--margin-top-h4);
   margin-bottom: var(--margin-bottom-h4);
+  width: fit-content;
+  max-width: var(--max-width-text);
 }
 
 p {
@@ -339,6 +349,8 @@ p {
   line-height: var(--line-height-base);
   margin-top: var(--margin-top-p);
   margin-bottom: var(--margin-bottom-p);
+  width: fit-content;
+  max-width: var(--max-width-text);
 }
 
 .font-bold {
