@@ -241,18 +241,18 @@
       Min screen: 320px
       Max screen: 1920px
     
-    Preferred value in clamp function is calculated based on these settings
+    Preferred value in clamp function (middle) is calculated based on these settings
   */
 
-  --text-xs: 0.75rem;
-  --text-sm: 0.75rem;
-  --text-base: 1rem;
-  --text-lg: 1.333rem;
-  --text-xl: 1.777rem;
-  --text-2xl: clamp(1.728rem, 1.5999rem + 0.6406vw, 2.3686rem);
-  --text-3xl: clamp(2.0736rem, 1.8569rem + 1.0837vw, 3.1573rem);
-  --text-4xl: clamp(2.4883rem, 2.1442rem + 1.7204vw, 4.2087rem);
-  --text-5xl: clamp(2.986rem, 2.4611rem + 2.6242vw, 5.6102rem);
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.5rem;
+  --text-xl: 1.75rem;
+  --text-2xl: clamp(2rem, 1.5999rem + 0.6406vw, 2.5rem);
+  --text-3xl: clamp(2.25rem, 1.8569rem + 1.0837vw, 3.25rem);
+  --text-4xl: clamp(2.75rem, 2.1442rem + 1.7204vw, 4.25rem);
+  --text-5xl: clamp(3.25rem, 2.4611rem + 2.6242vw, 5.5rem);
   /* --text-6xl: ;
   --text-7xl: ;
   --text-8xl: ;
