@@ -244,9 +244,9 @@
     Preferred value in clamp function (middle) is calculated based on these settings
   */
 
-  --text-xs: 0.875rem;
-  --text-sm: 1rem;
-  --text-base: 1.125rem;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
   --text-lg: 1.5rem;
   --text-xl: 1.75rem;
   --text-2xl: clamp(2rem, 1.5999rem + 0.6406vw, 2.5rem);
