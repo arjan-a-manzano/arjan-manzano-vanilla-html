@@ -294,6 +294,7 @@
   --arjan-melonade-yellow: #FFAB6E;
 
   --arjan-warm-ivory-white-primary: #FFF8EF;
+  --arjan-warm-ivory-white-primary-50pc: #FFF8EF50;
   --arjan-warm-ivory-white-secondary: #DED8CF;
   --arjan-warm-ivory-white-tertiary: #C7C1B8;
 
@@ -702,4 +703,16 @@ p {
 
 .text-warm-ivory-white-tertiary {
     color: var(--arjan-warm-ivory-white-tertiary);
+}
+
+/* Grid border utilities */
+
+.grid-border-side-8px {
+  border-top: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+  border-bottom: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+}
+
+.grid-border-vertical-8px {
+  border-left: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+  border-right: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
 }

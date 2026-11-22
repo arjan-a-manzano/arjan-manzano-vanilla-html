@@ -30,15 +30,37 @@
     </head>
 
     <body>
-        <main class="bg-prussian-blue-primary flex justify-center">
-            <section class="w-fit">
-                <h1 class="text-sinopia-orange">Macaroon muffin lollipop chocolate cake jelly beans jelly lollipop topping liquorice.</h1>
-                <h2>Lollipop jelly jelly beans carrot cake gummi bears chocolate powder sugar plum icing.</h2>
-                <h3>Icing dessert lemon drops pastry pie lollipop bear claw caramels dessert jelly beans biscuit.</h3>
-                <h4>Tootsie roll tart apple pie sesame snaps croissant candy canes sesame snaps apple pie candy canes.</h4>
-                <p>Jelly beans marzipan cupcake cotton candy brownie chocolate bar apple pie. Lollipop jelly jelly beans carrot cake gummi bears chocolate powder sugar plum icing.</p>
-                <p style="font-size: var(--text-sm);">Jelly beans marzipan cupcake cotton candy brownie chocolate bar apple pie.</p>
-                <p style="font-size: var(--text-xs);">Jelly beans marzipan cupcake cotton candy brownie chocolate bar apple pie.</p>
+        <main class="bg-prussian-blue-primary flex justify-center ">
+            <!-- NOTE: check if overflow-x-clip causes some issues -->
+            <section class="w-full h-dvh" style="min-height: 667px;">
+                <div class="w-full h-full grid" style="grid-template-columns: 8px 1fr 8px; grid-template-rows: 8px 1fr 8px;">
+                    <div class="grid-border-vertical-8px" style="grid-column-start: 2; grid-row-start: 1;" aria-hidden="true"></div>
+                    <div class="grid-border-side-8px" style="grid-column-start: 1; grid-row-start: 2;" aria-hidden="true"></div>
+
+                    <div class="h-full w-full grid" style="
+                        grid-column-start: 2;
+                        grid-row-start: 2; 
+                        border: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+                        padding: 8px;
+                    ">
+                        <!-- outline: 1px var(--arjan-warm-ivory-white-primary) solid; -->
+                        <div class="w-full h-full grid" style="
+                            grid-template-columns: repeat(12, calc(calc((100vw - 32px) - 12 * 4px) / 12));
+                            grid-template-rows: repeat(auto-fill, calc(calc((100vw - 32px) - 12 * 4px) / 12));
+                            gap: 4px;
+                        ">
+                        <!-- NOTE: inspo from https://stackoverflow.com/questions/76903943/css-grid-layout-square-cells -->
+                        <!-- NOTE: in calc nest, horizontal padding and outer horizontal grid border width is accounted for -->
+                            <h1 class="text-sinopia-orange col-span-full text-center w-full">
+                                Arjan<br>
+                                Manzano
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="grid-border-side-8px" style="grid-column-start: 3; grid-row-start: 2;" aria-hidden="true"></div>
+                    <div class="grid-border-vertical-8px" style="grid-column-start: 2; grid-row-start: 3;" aria-hidden="true"></div>
+                </div>
             </section>
         </main>
         <!--
