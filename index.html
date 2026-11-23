@@ -32,7 +32,7 @@
     <body>
         <main class="bg-prussian-blue-primary flex justify-center ">
             <!-- NOTE: check if overflow-x-clip causes some issues -->
-            <section class="w-full h-dvh" style="min-height: 667px;">
+            <section class="w-full h-dvh bg-melonade-yellow" style="min-height: 667px;">
                 <div class="w-full h-full grid" style="grid-template-columns: 8px 1fr 8px; grid-template-rows: 8px 1fr 8px;">
                     <div class="bg-prussian-blue-primary-75pc" style="grid-column-start: 1; grid-row-start: 1;" aria-hidden="true"></div>
                     <div class="grid-border-vertical-8px bg-prussian-blue-primary-75pc" style="grid-column-start: 2; grid-row-start: 1;" aria-hidden="true"></div>
@@ -42,7 +42,7 @@
                     <div class="h-full w-full grid" style="
                         grid-column-start: 2;
                         grid-row-start: 2; 
-                        border: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+                        border: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
                         padding: 8px;
                     ">
                         <!-- outline: 1px var(--arjan-warm-ivory-white-primary) solid; -->
@@ -53,10 +53,27 @@
                         ">
                         <!-- NOTE: inspo from https://stackoverflow.com/questions/76903943/css-grid-layout-square-cells -->
                         <!-- NOTE: in calc nest, horizontal padding and outer horizontal grid border width is accounted for -->
-                            <h1 class="text-sinopia-orange col-span-full text-center w-full">
+                            <h1 class="text-sinopia-orange col-span-full text-center w-full h-full"
+                            style="
+                                grid-row: 2 / span 4;
+                                margin-bottom: 0;
+                            "
+                            >
                                 Arjan<br>
                                 Manzano
                             </h1>
+                            <p class="w-full h-full font-bold text-prussian-blue-primary" style="
+                                margin-top: 0;
+                                grid-row: 7;
+                                grid-column: 2 / span 5;
+                            "
+                            >In pursuit of technological empowerment</p>
+                            <p class="w-full h-full text-right text-prussian-blue-primary" style="
+                                margin-top: 0;
+                                grid-row: 7;
+                                grid-column: 7 / span 5;
+                            "
+                            >Quezon City, Philippines</p>
                         </div>
                     </div>
 
