@@ -30,20 +30,17 @@
     </head>
 
     <body>
-        <main class="bg-yellow-primary flex justify-center ">
+        <main class="bg-blue-primary flex justify-center flex-col">
             <!-- NOTE: check if overflow-x-clip causes some issues -->
-            <section class="w-full h-dvh bg-melonade-yellow" style="min-height: 667px;">
+            <section class="w-full h-dvh bg-blue-primary" style="min-height: 667px;">
+                <!-- TODO: create min and max height utilities to remove inline style -->
                 <div class="w-full h-full grid" style="grid-template-columns: 8px 1fr 8px; grid-template-rows: 8px 1fr 8px;">
                     <div class="bg-blue-primary-75pc col-start-1 row-start-1" aria-hidden="true"></div>
-                    <div class="grid-border-vertical-8px bg-blue-primary-75pc col-start-2 row-start-1" aria-hidden="true"></div>
-                    <div class="grid-border-side-8px bg-blue-primary-75pc col-start-1 row-start-2" aria-hidden="true"></div>
+                    <div class="grid-border-vertical-mobile bg-blue-primary-75pc col-start-2 row-start-1 border-white-primary-25pc" aria-hidden="true"></div>
+                    <div class="grid-border-side-mobile bg-blue-primary-75pc col-start-1 row-start-2 border-white-primary-25pc" aria-hidden="true"></div>
                     <div class="bg-blue-primary-75pc col-start-3 row-start-1" aria-hidden="true"></div>
 
-                    <div class="h-full w-full grid inner-grid-mobile" style="
-                        grid-column-start: 2;
-                        grid-row-start: 2; 
-                        border: 1px solid var(--arjan-white-primary-75pc);
-                    ">
+                    <div class="h-full w-full grid inner-grid-mobile col-start-2 row-start-2 border-1px border-white-primary-25pc">
                         <!-- NOTE: inspo from https://stackoverflow.com/questions/76903943/css-grid-layout-square-cells -->
                         <!-- NOTE: in calc nest, horizontal padding and outer horizontal grid border width is accounted for -->
                         <h1 class="text-orange-primary col-span-full text-center w-full h-full"
@@ -54,12 +51,12 @@
                             Arjan<br>
                             Manzano
                         </h1>
-                        <p class="w-full h-full font-bold text-blue-primary" style="
+                        <p class="w-full h-full font-bold text-white-primary" style="
                             grid-row: 7;
                             grid-column: 2 / span 5;
                         "
                         >In pursuit of technological empowerment</p>
-                        <p class="w-full h-full text-right text-blue-primary" style="
+                        <p class="w-full h-full text-right text-white-primary" style="
                             grid-row: 7;
                             grid-column: 7 / span 5;
                         "
@@ -67,8 +64,8 @@
                     </div>
 
                     <div class="bg-blue-primary-75pc col-start-1 row-start-3" aria-hidden="true"></div>
-                    <div class="grid-border-side-8px bg-blue-primary-75pc col-start-3 row-start-2" aria-hidden="true"></div>
-                    <div class="grid-border-vertical-8px bg-blue-primary-75pc col-start-2 row-start-3" aria-hidden="true"></div>
+                    <div class="grid-border-side-mobile bg-blue-primary-75pc col-start-3 row-start-2 border-white-primary-25pc" aria-hidden="true"></div>
+                    <div class="grid-border-vertical-mobile bg-blue-primary-75pc col-start-2 row-start-3 border-white-primary-25pc" aria-hidden="true"></div>
                     <div class="bg-blue-primary-75pc col-start-3 row-start-3" aria-hidden="true"></div>
                 </div>
             </section>
