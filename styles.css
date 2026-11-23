@@ -132,6 +132,10 @@
 
 
 
+/* ==========================================================================
+   FONT-FACE DECLARATIONS
+   ========================================================================== */
+
 @font-face {
   font-family: "Exec Demiserif";
   src: url("Exec-Demiserif-Regular.eot");
@@ -232,8 +236,29 @@
 
 
 
+/* ==========================================================================
+   TOKENS
+   ========================================================================== */
+
 :root {
   --font-primary: 'Exec Demiserif', sans-serif;
+
+  --max-width-text: 65ch;
+
+  /* ------------------------------------------------------------------------
+     FONT WEIGHT TOKENS
+     ------------------------------------------------------------------------ */
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+
+  /* ------------------------------------------------------------------------
+     FONT SIZE TOKENS
+     ------------------------------------------------------------------------ */
 
   /* 
     Clamp: https://typeyeah.com/tools/type-scale-calculator
@@ -257,7 +282,12 @@
   --text-7xl: ;
   --text-8xl: ;
   --text-9xl: ; */
-  
+
+
+  /* ------------------------------------------------------------------------
+     LINE HEIGHT TOKENS
+     ------------------------------------------------------------------------ */
+
   --line-height-base: 1.5;
   --line-height-lg: 1.45;
   --line-height-xl: 1.40;
@@ -265,42 +295,64 @@
   --line-height-3xl: 1.30;
   --line-height-4xl: 1.25;
 
+
+  /* ------------------------------------------------------------------------
+     TEXT MARGIN TOKENS
+     ------------------------------------------------------------------------ */
+
   /* 
     em calculations: https://github.com/tailwindlabs/tailwindcss-typography/blob/main/src/styles.js 
     em = px/base  
     */
   --margin-top-h1: 0em;
   --margin-bottom-h1: 0.8em;
+
   --margin-top-h2: 1.6em;
   --margin-bottom-h2: 0.8em;
+
   --margin-top-h3: 1.56em;
   --margin-bottom-h3: 0.44em;
+
   --margin-top-h4: 1.43em;
   --margin-bottom-h4: 0.57em;
+
   --margin-top-p: 1.14em;
   --margin-bottom-p: 1.14em;
 
-  --font-weight-thin: 100;
-  --font-weight-extralight: 200;
-  --font-weight-light: 300;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
 
+  /* ------------------------------------------------------------------------
+     COLOR TOKENS
+     ------------------------------------------------------------------------ */
+
+  /* PRIMARY: PRUSSIAN BLUE */
   --arjan-prussian-blue-primary: #002244;
   --arjan-prussian-blue-primary-75pc: #002244C0;
+
   --arjan-prussian-blue-secondary: #18334B;
+
   --arjan-prussian-blue-tertiary: #30445A;
 
+  /* SECONDARY: SINOPIA ORANGE */
   --arjan-sinopia-orange: #CC361E;
+
+
+  /* TERTIARY: MELONADE YELLOW */
   --arjan-melonade-yellow: #FFAB6E;
 
+  /* WHITE: WARM IVORY WHITE */
   --arjan-warm-ivory-white-primary: #FFF8EF;
   --arjan-warm-ivory-white-primary-75pc: #FFF8EFC0;
-  --arjan-warm-ivory-white-secondary: #DED8CF;
-  --arjan-warm-ivory-white-tertiary: #C7C1B8;
 
-  --max-width-text: 65ch;
+  --arjan-warm-ivory-white-secondary: #DED8CF;
+
+  --arjan-warm-ivory-white-tertiary: #C7C1B8;
 }
+
+
+
+/* ==========================================================================
+   TEXT ELEMENT DEFAULTS
+   ========================================================================== */
 
 body {
   font-family: var(--font-primary);
@@ -355,6 +407,12 @@ p {
   max-width: var(--max-width-text);
 }
 
+
+
+/* ==========================================================================
+   FONT WEIGHT UTILITIES
+   ========================================================================== */
+
 .font-bold {
   font-weight: bold;
 }
@@ -370,6 +428,12 @@ p {
 .text-sm {
   font-size: var(--text-sm);
 }
+
+
+
+/* ==========================================================================
+   FONT SIZE UTILITIES
+   ========================================================================== */
 
 .text-base {
   font-size: var(--text-base);
@@ -399,6 +463,12 @@ p {
   font-size: var(--text-5xl);
 }
 
+
+
+/* ==========================================================================
+   TEXT ALIGNMENT UTILITIES
+   ========================================================================== */
+
 .text-left {
   text-align: left;
 }
@@ -411,6 +481,12 @@ p {
   text-align: right;
 }
 
+
+
+/* ==========================================================================
+   TEXT MARGIN OVERRIDES
+   ========================================================================== */
+
 .uppermost-margin-override {
   margin-top: 0;
 }
@@ -418,6 +494,12 @@ p {
 .bottommost-margin-override {
   margin-bottom: 0;
 }
+
+
+
+/* ==========================================================================
+   SIZE UTILITIES
+   ========================================================================== */
 
 .w-fit {
   width: fit-content;
@@ -443,6 +525,12 @@ p {
   height: 100dvh;
 }
 
+
+
+/* ==========================================================================
+   ELEMENT DISPLAY UTILITIES
+   ========================================================================== */
+
 .flex {
   display: flex;
 }
@@ -454,6 +542,12 @@ p {
 .grid {
   display: grid;
 }
+
+
+
+/* ==========================================================================
+   ELEMENT POSITION UTILITIES
+   ========================================================================== */
 
 .fixed {
   position: fixed;
@@ -467,6 +561,12 @@ p {
   position: relative;
 }
 
+
+
+/* ==========================================================================
+   FLEX DIRECTION UTILITIES
+   ========================================================================== */
+
 .flex-row {
   flex-direction: row;
 }
@@ -475,6 +575,13 @@ p {
   flex-direction: column;
 }
 
+
+
+/* ==========================================================================
+   GRID COLUMN & ROW SIZE UTILITIES
+   ========================================================================== */
+
+/* Particularly for mobile layout overrides */
 .grid-cols-1 {
   grid-template-columns: auto;
 }
@@ -482,6 +589,12 @@ p {
 .grid-rows-1 {
   grid-template-rows: auto;
 }
+
+
+
+/* ==========================================================================
+   GRID CELL SIZE (SPAN) UTILITIES
+   ========================================================================== */
 
 .row-span-full {
   grid-row: 1 / -1;
@@ -542,6 +655,7 @@ p {
   overflow: visible;
 }
 
+/* HORIZONTAL */
 .overflow-x-clip {
   overflow-x: clip;
 }
@@ -554,6 +668,7 @@ p {
   overflow-x: visible;
 }
 
+/* VERTICAL */
 .overflow-y-clip {
   overflow-y: clip;
 }
@@ -565,6 +680,12 @@ p {
 .overflow-y-visible {
   overflow-y: visible;
 }
+
+
+
+/* ==========================================================================
+   FLEX ITEMS ALIGNMENT UTILITIES
+   ========================================================================== */
 
 .justify-start {
   justify-content: flex-start;
@@ -594,6 +715,11 @@ p {
   align-items: flex-end;
 }
 
+
+
+/* ==========================================================================
+   BACKGROUND & IMAGE FITTING UTILITIES
+   ========================================================================== */
 .object-cover {
   object-fit: cover;
 }
@@ -602,7 +728,11 @@ p {
   object-fit: contain;
 }
 
-/* Object position utilities */
+
+
+/* ==========================================================================
+   BACKGROUND & IMAGE POSITION UTILITIES
+   ========================================================================== */
 
 .object-top-left {
   object-position: top left;
@@ -640,6 +770,12 @@ p {
   object-position: bottom right;
 }
 
+
+
+/* ==========================================================================
+   ABSOLUTE ITEM POSITION UTILITIES
+   ========================================================================== */
+
 .top-0 {
   top: 0;
 }
@@ -655,6 +791,12 @@ p {
 .bottom-0 {
   bottom: 0;
 }
+
+
+
+/* ==========================================================================
+   Z-INDEX UTILITIES
+   ========================================================================== */
 
 .z-0 {
   z-index: 0;
@@ -676,8 +818,18 @@ p {
   z-index: 4;
 }
 
-/* Background Colors */
 
+
+/* ==========================================================================
+   BACKGROUND COLOR UTILITIES
+   ========================================================================== */
+
+
+/* ------------------------------------------------------------------------
+   PRIMARY: PRUSSIAN BLUE
+   ------------------------------------------------------------------------ */
+
+/* PRIMARY SHADE */
 .bg-prussian-blue-primary {
     background-color: var(--arjan-prussian-blue-primary);
 }
@@ -686,70 +838,132 @@ p {
   background-color: var(--arjan-prussian-blue-primary-75pc);
 }
 
+/* SECONDARY SHADE */
 .bg-prussian-blue-secondary {
     background-color: var(--arjan-prussian-blue-secondary);
 }
 
+
+/* TERTIARY SHADE */
 .bg-prussian-blue-tertiary {
     background-color: var(--arjan-prussian-blue-tertiary);
 }
+
+
+
+/* ------------------------------------------------------------------------
+   SECONDARY: SINOPIA ORANGE
+   ------------------------------------------------------------------------ */
 
 .bg-sinopia-orange {
     background-color: var(--arjan-sinopia-orange);
 }
 
+
+/* ------------------------------------------------------------------------
+   TERTIARY: MELONADE YELLOW
+   ------------------------------------------------------------------------ */
+
 .bg-melonade-yellow {
     background-color: var(--arjan-melonade-yellow);
 }
 
+
+/* ------------------------------------------------------------------------
+   WHITE: WARM IVORY WHITE
+   ------------------------------------------------------------------------ */
+
+/* PRIMARY SHADE */
 .bg-warm-ivory-white-primary {
     background-color: var(--arjan-warm-ivory-white-primary);
 }
 
+
+/* SECONDARY SHADE */
 .bg-warm-ivory-white-secondary {
     background-color: var(--arjan-warm-ivory-white-secondary);
 }
 
+
+/* TERTIARY SHADE */
 .bg-warm-ivory-white-tertiary {
     background-color: var(--arjan-warm-ivory-white-tertiary);
 }
 
 
-/* Text Colors */
 
+/* ==========================================================================
+   BACKGROUND COLOR UTILITIES
+   ========================================================================== */
+
+
+/* ------------------------------------------------------------------------
+  PRIMARY: PRUSSIAN BLUE
+  ------------------------------------------------------------------------ */
+
+/* PRIMARY SHADE */
 .text-prussian-blue-primary {
     color: var(--arjan-prussian-blue-primary);
 }
 
+
+/* SECONDARY SHADE */
 .text-prussian-blue-secondary {
     color: var(--arjan-prussian-blue-secondary);
 }
 
+
+/* TERTIARY SHADE */
 .text-prussian-blue-tertiary {
     color: var(--arjan-prussian-blue-tertiary);
 }
+
+
+/* ------------------------------------------------------------------------
+  SECONDARY: SINOPIA ORANGE
+  ------------------------------------------------------------------------ */
 
 .text-sinopia-orange {
     color: var(--arjan-sinopia-orange);
 }
 
+
+/* ------------------------------------------------------------------------
+  TERTIARY: MELONADE YELLOW
+  ------------------------------------------------------------------------ */
+
 .text-melonade-yellow {
     color: var(--arjan-melonade-yellow);
 }
 
+
+/* ------------------------------------------------------------------------
+  WHITE: WHITE IVORY WHITE
+  ------------------------------------------------------------------------ */
+
+/* PRIMARY SHADE */
 .text-warm-ivory-white-primary {
     color: var(--arjan-warm-ivory-white-primary);
 }
 
+
+/* SECONDARY SHADE */
 .text-warm-ivory-white-secondary {
     color: var(--arjan-warm-ivory-white-secondary);
 }
 
+
+/* TERTIARY SHADE */
 .text-warm-ivory-white-tertiary {
     color: var(--arjan-warm-ivory-white-tertiary);
 }
 
-/* Grid border utilities */
+
+
+
+/* ==========================================================================
+   CUSTOM GRID BORDER DESIGN
+   ========================================================================== */
 
 .grid-border-side-8px {
   border-top: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
