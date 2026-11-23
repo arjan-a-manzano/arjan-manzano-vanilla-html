@@ -325,27 +325,51 @@
      ------------------------------------------------------------------------ */
 
   /* PRIMARY: PRUSSIAN BLUE */
-  --arjan-prussian-blue-primary: #002244;
-  --arjan-prussian-blue-primary-75pc: #002244C0;
+  --arjan-blue-primary: #002244;
+  --arjan-blue-25pc: #00224440;
+  --arjan-blue-50pc: #00224480;
+  --arjan-blue-75pc: #002244C0;
 
-  --arjan-prussian-blue-secondary: #18334B;
+  --arjan-blue-secondary: #18334B;
+  --arjan-blue-secondary-25pc: #18334B40;
+  --arjan-blue-secondary-50pc: #18334B80;
+  --arjan-blue-secondary-75pc: #18334BC0;
 
-  --arjan-prussian-blue-tertiary: #30445A;
+  --arjan-blue-tertiary: #30445A;
+  --arjan-blue-tertiary-25pc: #30445A40;
+  --arjan-blue-tertiary-50pc: #30445A80;
+  --arjan-blue-tertiary-75pc: #30445AC0;
+
 
   /* SECONDARY: SINOPIA ORANGE */
-  --arjan-sinopia-orange: #CC361E;
+  --arjan-orange-primary: #CC361E;
+  --arjan-orange-primary-25pc: #CC361E40;
+  --arjan-orange-primary-50pc: #CC361E80;
+  --arjan-orange-primary-75pc: #CC361EC0;
 
 
   /* TERTIARY: MELONADE YELLOW */
-  --arjan-melonade-yellow: #FFAB6E;
+  --arjan-yellow-primary: #FFAB6E;
+  --arjan-yellow-primary-25pc: #FFAB6E40;
+  --arjan-yellow-primary-50pc: #FFAB6E80;
+  --arjan-yellow-primary-75pc: #FFAB6EC0;
+
 
   /* WHITE: WARM IVORY WHITE */
-  --arjan-warm-ivory-white-primary: #FFF8EF;
-  --arjan-warm-ivory-white-primary-75pc: #FFF8EFC0;
+  --arjan-white-primary: #FFF8EF;
+  --arjan-white-primary-25pc: #FFF8EF40;
+  --arjan-white-primary-50pc: #FFF8EF80;
+  --arjan-white-primary-75pc: #FFF8EFC0;
 
-  --arjan-warm-ivory-white-secondary: #DED8CF;
+  --arjan-white-secondary: #DED8CF;
+  --arjan-white-secondary-25pc: #DED8CF40;
+  --arjan-white-secondary-50pc: #DED8CF80;
+  --arjan-white-secondary-75pc: #DED8CFC0;
 
-  --arjan-warm-ivory-white-tertiary: #C7C1B8;
+  --arjan-white-tertiary: #C7C1B8;
+  --arjan-white-tertiary-25pc: #C7C1B840;
+  --arjan-white-tertiary-50pc: #C7C1B880;
+  --arjan-white-tertiary-75pc: #C7C1B8C0;
 }
 
 
@@ -830,33 +854,75 @@ p {
    ------------------------------------------------------------------------ */
 
 /* PRIMARY SHADE */
-.bg-prussian-blue-primary {
-    background-color: var(--arjan-prussian-blue-primary);
+.bg-blue-primary {
+    background-color: var(--arjan-blue-primary);
 }
 
-.bg-prussian-blue-primary-75pc {
-  background-color: var(--arjan-prussian-blue-primary-75pc);
+.bg-blue-primary-25pc {
+    background-color: var(--arjan-blue-25pc);
+}
+
+.bg-blue-primary-50pc {
+    background-color: var(--arjan-blue-50pc);
+}
+
+.bg-blue-primary-75pc {
+    background-color: var(--arjan-blue-75pc);
 }
 
 /* SECONDARY SHADE */
-.bg-prussian-blue-secondary {
-    background-color: var(--arjan-prussian-blue-secondary);
+.bg-blue-secondary {
+    background-color: var(--arjan-blue-secondary);
 }
 
+.bg-blue-secondary-25pc {
+    background-color: var(--arjan-blue-secondary-25pc);
+}
+
+.bg-blue-secondary-50pc {
+    background-color: var(--arjan-blue-secondary-50pc);
+}
+
+.bg-blue-secondary-75pc {
+    background-color: var(--arjan-blue-secondary-75pc);
+}
 
 /* TERTIARY SHADE */
-.bg-prussian-blue-tertiary {
-    background-color: var(--arjan-prussian-blue-tertiary);
+.bg-blue-tertiary {
+    background-color: var(--arjan-blue-tertiary);
 }
 
+.bg-blue-tertiary-25pc {
+    background-color: var(--arjan-blue-tertiary-25pc);
+}
+
+.bg-blue-tertiary-50pc {
+    background-color: var(--arjan-blue-tertiary-50pc);
+}
+
+.bg-blue-tertiary-75pc {
+    background-color: var(--arjan-blue-tertiary-75pc);
+}
 
 
 /* ------------------------------------------------------------------------
    SECONDARY: SINOPIA ORANGE
    ------------------------------------------------------------------------ */
 
-.bg-sinopia-orange {
-    background-color: var(--arjan-sinopia-orange);
+.bg-orange-primary {
+    background-color: var(--arjan-orange-primary);
+}
+
+.bg-orange-primary-25pc {
+    background-color: var(--arjan-orange-primary-25pc);
+}
+
+.bg-orange-primary-50pc {
+    background-color: var(--arjan-orange-primary-50pc);
+}
+
+.bg-orange-primary-75pc {
+    background-color: var(--arjan-orange-primary-75pc);
 }
 
 
@@ -864,8 +930,20 @@ p {
    TERTIARY: MELONADE YELLOW
    ------------------------------------------------------------------------ */
 
-.bg-melonade-yellow {
-    background-color: var(--arjan-melonade-yellow);
+.bg-yellow-primary {
+    background-color: var(--arjan-yellow-primary);
+}
+
+.bg-yellow-primary-25pc {
+    background-color: var(--arjan-yellow-primary-25pc);
+}
+
+.bg-yellow-primary-50pc {
+    background-color: var(--arjan-yellow-primary-50pc);
+}
+
+.bg-yellow-primary-75pc {
+    background-color: var(--arjan-yellow-primary-75pc);
 }
 
 
@@ -874,88 +952,214 @@ p {
    ------------------------------------------------------------------------ */
 
 /* PRIMARY SHADE */
-.bg-warm-ivory-white-primary {
-    background-color: var(--arjan-warm-ivory-white-primary);
+.bg-white-primary {
+    background-color: var(--arjan-white-primary);
 }
 
+.bg-white-primary-25pc {
+    background-color: var(--arjan-white-primary-25pc);
+}
+
+.bg-white-primary-50pc {
+    background-color: var(--arjan-white-primary-50pc);
+}
+
+.bg-white-primary-75pc {
+    background-color: var(--arjan-white-primary-75pc);
+}
 
 /* SECONDARY SHADE */
-.bg-warm-ivory-white-secondary {
-    background-color: var(--arjan-warm-ivory-white-secondary);
+.bg-white-secondary {
+    background-color: var(--arjan-white-secondary);
 }
 
+.bg-white-secondary-25pc {
+    background-color: var(--arjan-white-secondary-25pc);
+}
+
+.bg-white-secondary-50pc {
+    background-color: var(--arjan-white-secondary-50pc);
+}
+
+.bg-white-secondary-75pc {
+    background-color: var(--arjan-white-secondary-75pc);
+}
 
 /* TERTIARY SHADE */
-.bg-warm-ivory-white-tertiary {
-    background-color: var(--arjan-warm-ivory-white-tertiary);
+.bg-white-tertiary {
+    background-color: var(--arjan-white-tertiary);
+}
+
+.bg-white-tertiary-25pc {
+    background-color: var(--arjan-white-tertiary-25pc);
+}
+
+.bg-white-tertiary-50pc {
+    background-color: var(--arjan-white-tertiary-50pc);
+}
+
+.bg-white-tertiary-75pc {
+    background-color: var(--arjan-white-tertiary-75pc);
 }
 
 
 
 /* ==========================================================================
-   BACKGROUND COLOR UTILITIES
+   TEXT COLOR UTILITIES
    ========================================================================== */
 
 
 /* ------------------------------------------------------------------------
-  PRIMARY: PRUSSIAN BLUE
-  ------------------------------------------------------------------------ */
+   PRIMARY: PRUSSIAN BLUE
+   ------------------------------------------------------------------------ */
 
 /* PRIMARY SHADE */
-.text-prussian-blue-primary {
-    color: var(--arjan-prussian-blue-primary);
+.text-blue-primary {
+    color: var(--arjan-blue-primary);
 }
 
+.text-blue-primary-25pc {
+    color: var(--arjan-blue-25pc);
+}
+
+.text-blue-primary-50pc {
+    color: var(--arjan-blue-50pc);
+}
+
+.text-blue-primary-75pc {
+    color: var(--arjan-blue-75pc);
+}
 
 /* SECONDARY SHADE */
-.text-prussian-blue-secondary {
-    color: var(--arjan-prussian-blue-secondary);
+.text-blue-secondary {
+    color: var(--arjan-blue-secondary);
 }
 
+.text-blue-secondary-25pc {
+    color: var(--arjan-blue-secondary-25pc);
+}
+
+.text-blue-secondary-50pc {
+    color: var(--arjan-blue-secondary-50pc);
+}
+
+.text-blue-secondary-75pc {
+    color: var(--arjan-blue-secondary-75pc);
+}
 
 /* TERTIARY SHADE */
-.text-prussian-blue-tertiary {
-    color: var(--arjan-prussian-blue-tertiary);
+.text-blue-tertiary {
+    color: var(--arjan-blue-tertiary);
+}
+
+.text-blue-tertiary-25pc {
+    color: var(--arjan-blue-tertiary-25pc);
+}
+
+.text-blue-tertiary-50pc {
+    color: var(--arjan-blue-tertiary-50pc);
+}
+
+.text-blue-tertiary-75pc {
+    color: var(--arjan-blue-tertiary-75pc);
 }
 
 
 /* ------------------------------------------------------------------------
-  SECONDARY: SINOPIA ORANGE
-  ------------------------------------------------------------------------ */
+   SECONDARY: SINOPIA ORANGE
+   ------------------------------------------------------------------------ */
 
-.text-sinopia-orange {
-    color: var(--arjan-sinopia-orange);
+.text-orange-primary {
+    color: var(--arjan-orange-primary);
+}
+
+.text-orange-primary-25pc {
+    color: var(--arjan-orange-primary-25pc);
+}
+
+.text-orange-primary-50pc {
+    color: var(--arjan-orange-primary-50pc);
+}
+
+.text-orange-primary-75pc {
+    color: var(--arjan-orange-primary-75pc);
 }
 
 
 /* ------------------------------------------------------------------------
-  TERTIARY: MELONADE YELLOW
-  ------------------------------------------------------------------------ */
+   TERTIARY: MELONADE YELLOW
+   ------------------------------------------------------------------------ */
 
-.text-melonade-yellow {
-    color: var(--arjan-melonade-yellow);
+.text-yellow-primary {
+    color: var(--arjan-yellow-primary);
+}
+
+.text-yellow-primary-25pc {
+    color: var(--arjan-yellow-primary-25pc);
+}
+
+.text-yellow-primary-50pc {
+    color: var(--arjan-yellow-primary-50pc);
+}
+
+.text-yellow-primary-75pc {
+    color: var(--arjan-yellow-primary-75pc);
 }
 
 
 /* ------------------------------------------------------------------------
-  WHITE: WHITE IVORY WHITE
-  ------------------------------------------------------------------------ */
+   WHITE: WARM IVORY WHITE
+   ------------------------------------------------------------------------ */
 
 /* PRIMARY SHADE */
-.text-warm-ivory-white-primary {
-    color: var(--arjan-warm-ivory-white-primary);
+.text-white-primary {
+    color: var(--arjan-white-primary);
 }
 
+.text-white-primary-25pc {
+    color: var(--arjan-white-primary-25pc);
+}
+
+.text-white-primary-50pc {
+    color: var(--arjan-white-primary-50pc);
+}
+
+.text-white-primary-75pc {
+    color: var(--arjan-white-primary-75pc);
+}
 
 /* SECONDARY SHADE */
-.text-warm-ivory-white-secondary {
-    color: var(--arjan-warm-ivory-white-secondary);
+.text-white-secondary {
+    color: var(--arjan-white-secondary);
 }
 
+.text-white-secondary-25pc {
+    color: var(--arjan-white-secondary-25pc);
+}
+
+.text-white-secondary-50pc {
+    color: var(--arjan-white-secondary-50pc);
+}
+
+.text-white-secondary-75pc {
+    color: var(--arjan-white-secondary-75pc);
+}
 
 /* TERTIARY SHADE */
-.text-warm-ivory-white-tertiary {
-    color: var(--arjan-warm-ivory-white-tertiary);
+.text-white-tertiary {
+    color: var(--arjan-white-tertiary);
+}
+
+.text-white-tertiary-25pc {
+    color: var(--arjan-white-tertiary-25pc);
+}
+
+.text-white-tertiary-50pc {
+    color: var(--arjan-white-tertiary-50pc);
+}
+
+.text-white-tertiary-75pc {
+    color: var(--arjan-white-tertiary-75pc);
 }
 
 
@@ -966,11 +1170,11 @@ p {
    ========================================================================== */
 
 .grid-border-side-8px {
-  border-top: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
-  border-bottom: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
+  border-top: 1px solid var(--arjan-white-primary-75pc);
+  border-bottom: 1px solid var(--arjan-white-primary-75pc);
 }
 
 .grid-border-vertical-8px {
-  border-left: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
-  border-right: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
+  border-left: 1px solid var(--arjan-white-primary-75pc);
+  border-right: 1px solid var(--arjan-white-primary-75pc);
 }
