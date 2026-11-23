@@ -876,6 +876,7 @@ p {
    BORDER WIDTH UTILITIES
    ========================================================================== */
 
+/* ALL SIDES */
 .border-1px {
   border-width: 1px;
   border-style: solid;
@@ -905,6 +906,137 @@ p {
   border-width: 6px;
   border-style: solid;
 }
+
+
+
+/* TOP */
+.border-t-1px {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.border-t-2px {
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+.border-t-3px {
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+
+.border-t-4px {
+  border-top-width: 4px;
+  border-top-style: solid;
+}
+
+.border-t-5px {
+  border-top-width: 5px;
+  border-top-style: solid;
+}
+
+.border-t-6px {
+  border-top-width: 6px;
+  border-top-style: solid;
+}
+
+
+/* RIGHT */
+.border-r-1px {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.border-r-2px {
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+.border-r-3px {
+  border-right-width: 3px;
+  border-right-style: solid;
+}
+
+.border-r-4px {
+  border-right-width: 4px;
+  border-right-style: solid;
+}
+
+.border-r-5px {
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+
+.border-r-6px {
+  border-right-width: 6px;
+  border-right-style: solid;
+}
+
+
+/* BOTTOM */
+.border-b-1px {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.border-b-2px {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.border-b-3px {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.border-b-4px {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+
+.border-b-5px {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.border-b-6px {
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+}
+
+
+/* LEFT */
+.border-l-1px {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.border-l-2px {
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+.border-l-3px {
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+.border-l-4px {
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+
+.border-l-5px {
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+
+.border-l-6px {
+  border-left-width: 6px;
+  border-left-style: solid;
+}
+
+
 
 /* ==========================================================================
    BORDER COLOR UTILITIES
