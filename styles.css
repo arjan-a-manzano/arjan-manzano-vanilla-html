@@ -491,6 +491,45 @@ p {
   grid-column: 1 / -1;
 }
 
+
+
+/* ==========================================================================
+   GRID CELL STARTING POSITION UTILITIES
+   ========================================================================== */
+
+/* ROWS */
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+/* COLUMNS */
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+
+
+/* ==========================================================================
+   OVERFLOW UTILITIES
+   ========================================================================== */
+
+/* HORIZONTAL & VERTICAL */
 .overflow-clip {
   overflow: clip;
 }
