@@ -39,40 +39,31 @@
                     <div class="grid-border-side-8px bg-blue-primary-75pc col-start-1 row-start-2" aria-hidden="true"></div>
                     <div class="bg-blue-primary-75pc col-start-3 row-start-1" aria-hidden="true"></div>
 
-                    <div class="h-full w-full grid" style="
+                    <div class="h-full w-full grid inner-grid-mobile" style="
                         grid-column-start: 2;
                         grid-row-start: 2; 
                         border: 1px solid var(--arjan-white-primary-75pc);
-                        padding: 8px;
                     ">
-                        <!-- outline: 1px var(--arjan-warm-ivory-white-primary) solid; -->
-                        <div class="w-full h-full grid" style="
-                            grid-template-columns: repeat(12, calc(calc((100vw - 32px) - 12 * 4px) / 12));
-                            grid-template-rows: repeat(auto-fill, calc(calc((100vw - 32px) - 12 * 4px) / 12));
-                            gap: 4px;
-                        ">
                         <!-- NOTE: inspo from https://stackoverflow.com/questions/76903943/css-grid-layout-square-cells -->
                         <!-- NOTE: in calc nest, horizontal padding and outer horizontal grid border width is accounted for -->
-                            <h1 class="text-orange-primary col-span-full text-center w-full h-full"
-                            style="
-                                grid-row: 2 / span 4;
-                                margin-bottom: 0;
-                            "
-                            >
-                                Arjan<br>
-                                Manzano
-                            </h1>
-                            <p class="w-full h-full font-bold text-blue-primary" style="
-                                grid-row: 7;
-                                grid-column: 2 / span 5;
-                            "
-                            >In pursuit of technological empowerment</p>
-                            <p class="w-full h-full text-right text-blue-primary" style="
-                                grid-row: 7;
-                                grid-column: 7 / span 5;
-                            "
-                            >Quezon City, Philippines</p>
-                        </div>
+                        <h1 class="text-orange-primary col-span-full text-center w-full h-full"
+                        style="
+                            grid-row: 2 / span 4;
+                        "
+                        >
+                            Arjan<br>
+                            Manzano
+                        </h1>
+                        <p class="w-full h-full font-bold text-blue-primary" style="
+                            grid-row: 7;
+                            grid-column: 2 / span 5;
+                        "
+                        >In pursuit of technological empowerment</p>
+                        <p class="w-full h-full text-right text-blue-primary" style="
+                            grid-row: 7;
+                            grid-column: 7 / span 5;
+                        "
+                        >Quezon City, Philippines</p>
                     </div>
 
                     <div class="bg-blue-primary-75pc col-start-1 row-start-3" aria-hidden="true"></div>
