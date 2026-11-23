@@ -287,6 +287,7 @@
   --font-weight-semibold: 600;
 
   --arjan-prussian-blue-primary: #002244;
+  --arjan-prussian-blue-primary-75pc: #002244C0;
   --arjan-prussian-blue-secondary: #18334B;
   --arjan-prussian-blue-tertiary: #30445A;
 
@@ -294,7 +295,7 @@
   --arjan-melonade-yellow: #FFAB6E;
 
   --arjan-warm-ivory-white-primary: #FFF8EF;
-  --arjan-warm-ivory-white-primary-50pc: #FFF8EF50;
+  --arjan-warm-ivory-white-primary-75pc: #FFF8EFC0;
   --arjan-warm-ivory-white-secondary: #DED8CF;
   --arjan-warm-ivory-white-tertiary: #C7C1B8;
 
@@ -642,6 +643,10 @@ p {
     background-color: var(--arjan-prussian-blue-primary);
 }
 
+.bg-prussian-blue-primary-75pc {
+  background-color: var(--arjan-prussian-blue-primary-75pc);
+}
+
 .bg-prussian-blue-secondary {
     background-color: var(--arjan-prussian-blue-secondary);
 }
@@ -708,11 +713,11 @@ p {
 /* Grid border utilities */
 
 .grid-border-side-8px {
-  border-top: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
-  border-bottom: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+  border-top: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
+  border-bottom: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
 }
 
 .grid-border-vertical-8px {
-  border-left: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
-  border-right: 1px solid var(--arjan-warm-ivory-white-primary-50pc);
+  border-left: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
+  border-right: 1px solid var(--arjan-warm-ivory-white-primary-75pc);
 }
