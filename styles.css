@@ -1549,15 +1549,21 @@ p {
    CUSTOM GRID BORDER DESIGN
    ========================================================================== */
 
-.grid-border-side-8px {
-  border-top: 1px solid var(--arjan-white-primary-75pc);
-  border-bottom: 1px solid var(--arjan-white-primary-75pc);
-}
-
-.grid-border-vertical-8px {
-  border-left: 1px solid var(--arjan-white-primary-75pc);
-  border-right: 1px solid var(--arjan-white-primary-75pc);
-}
+   .grid-border-side-mobile {
+    border-top-width: 1px;
+    border-top-style: solid;
+  
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  
+  .grid-border-vertical-mobile {
+    border-left-width: 1px;
+    border-left-style: solid;
+  
+    border-right-width: 1px;
+    border-right-style: solid;
+  }
 
 
 
