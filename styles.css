@@ -370,6 +370,16 @@
   --arjan-white-tertiary-25pc: #C7C1B840;
   --arjan-white-tertiary-50pc: #C7C1B880;
   --arjan-white-tertiary-75pc: #C7C1B8C0;
+
+  /* ------------------------------------------------------------------------
+   INNER GRID MOBILE VALUES
+   ------------------------------------------------------------------------ */
+
+  --subcolumns-mobile: 12;
+  --outer-border-width-mobile: 8px;
+  --inner-grid-padding-mobile: 8px;
+  --total-padding-mobile: calc(calc(var(--outer-border-width-mobile) + var(--inner-grid-padding-mobile)) * 2);
+  --inner-grid-gap-mobile: 4px;
 }
 
 
@@ -620,8 +630,43 @@ p {
    GRID CELL SIZE (SPAN) UTILITIES
    ========================================================================== */
 
+/* ROWS */
+.row-end-1 {
+  grid-row-end: span 1;
+}
+
+.row-end-2 {
+  grid-row-end: span 2;
+}
+
+.row-end-3 {
+  grid-row-end: span 3;
+}
+
+.row-end-4 {
+  grid-row-end: span 4;
+}
+
 .row-span-full {
   grid-row: 1 / -1;
+}
+
+
+/* COLUMNS */
+.col-end-1 {
+  grid-column-end: span 1;
+}
+
+.col-end-2 {
+  grid-column-end: span 2;
+}
+
+.col-end-3 {
+  grid-column-end: span 3;
+}
+
+.col-end-4 {
+  grid-column-end: span 4;
 }
 
 .col-span-full {
@@ -647,6 +692,11 @@ p {
   grid-row-start: 3;
 }
 
+.row-start-4 {
+  grid-row-start: 4;
+}
+
+
 /* COLUMNS */
 .col-start-1 {
   grid-column-start: 1;
@@ -658,6 +708,10 @@ p {
 
 .col-start-3 {
   grid-column-start: 3;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
 }
 
 
@@ -814,6 +868,200 @@ p {
 
 .bottom-0 {
   bottom: 0;
+}
+
+
+
+/* ==========================================================================
+   BORDER WIDTH UTILITIES
+   ========================================================================== */
+
+.border-1px {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-2px {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-3px {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border-4px {
+  border-width: 4px;
+  border-style: solid;
+}
+
+.border-5px {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.border-6px {
+  border-width: 6px;
+  border-style: solid;
+}
+
+/* ==========================================================================
+   BORDER COLOR UTILITIES
+   ========================================================================== */
+
+
+/* ------------------------------------------------------------------------
+   PRIMARY: PRUSSIAN BLUE
+   ------------------------------------------------------------------------ */
+
+/* PRIMARY SHADE */
+.border-blue-primary {
+    border-color: var(--arjan-blue-primary);
+}
+
+.border-blue-primary-25pc {
+    border-color: var(--arjan-blue-25pc);
+}
+
+.border-blue-primary-50pc {
+    border-color: var(--arjan-blue-50pc);
+}
+
+.border-blue-primary-75pc {
+    border-color: var(--arjan-blue-75pc);
+}
+
+/* SECONDARY SHADE */
+.border-blue-secondary {
+    border-color: var(--arjan-blue-secondary);
+}
+
+.border-blue-secondary-25pc {
+    border-color: var(--arjan-blue-secondary-25pc);
+}
+
+.border-blue-secondary-50pc {
+    border-color: var(--arjan-blue-secondary-50pc);
+}
+
+.border-blue-secondary-75pc {
+    border-color: var(--arjan-blue-secondary-75pc);
+}
+
+/* TERTIARY SHADE */
+.border-blue-tertiary {
+    border-color: var(--arjan-blue-tertiary);
+}
+
+.border-blue-tertiary-25pc {
+    border-color: var(--arjan-blue-tertiary-25pc);
+}
+
+.border-blue-tertiary-50pc {
+    border-color: var(--arjan-blue-tertiary-50pc);
+}
+
+.border-blue-tertiary-75pc {
+    border-color: var(--arjan-blue-tertiary-75pc);
+}
+
+
+/* ------------------------------------------------------------------------
+   SECONDARY: SINOPIA ORANGE
+   ------------------------------------------------------------------------ */
+
+.border-orange-primary {
+    border-color: var(--arjan-orange-primary);
+}
+
+.border-orange-primary-25pc {
+    border-color: var(--arjan-orange-primary-25pc);
+}
+
+.border-orange-primary-50pc {
+    border-color: var(--arjan-orange-primary-50pc);
+}
+
+.border-orange-primary-75pc {
+    border-color: var(--arjan-orange-primary-75pc);
+}
+
+
+/* ------------------------------------------------------------------------
+   TERTIARY: MELONADE YELLOW
+   ------------------------------------------------------------------------ */
+
+.border-yellow-primary {
+    border-color: var(--arjan-yellow-primary);
+}
+
+.border-yellow-primary-25pc {
+    border-color: var(--arjan-yellow-primary-25pc);
+}
+
+.border-yellow-primary-50pc {
+    border-color: var(--arjan-yellow-primary-50pc);
+}
+
+.border-yellow-primary-75pc {
+    border-color: var(--arjan-yellow-primary-75pc);
+}
+
+
+/* ------------------------------------------------------------------------
+   WHITE: WARM IVORY WHITE
+   ------------------------------------------------------------------------ */
+
+/* PRIMARY SHADE */
+.border-white-primary {
+    border-color: var(--arjan-white-primary);
+}
+
+.border-white-primary-25pc {
+    border-color: var(--arjan-white-primary-25pc);
+}
+
+.border-white-primary-50pc {
+    border-color: var(--arjan-white-primary-50pc);
+}
+
+.border-white-primary-75pc {
+    border-color: var(--arjan-white-primary-75pc);
+}
+
+/* SECONDARY SHADE */
+.border-white-secondary {
+    border-color: var(--arjan-white-secondary);
+}
+
+.border-white-secondary-25pc {
+    border-color: var(--arjan-white-secondary-25pc);
+}
+
+.border-white-secondary-50pc {
+    border-color: var(--arjan-white-secondary-50pc);
+}
+
+.border-white-secondary-75pc {
+    border-color: var(--arjan-white-secondary-75pc);
+}
+
+/* TERTIARY SHADE */
+.border-white-tertiary {
+    border-color: var(--arjan-white-tertiary);
+}
+
+.border-white-tertiary-25pc {
+    border-color: var(--arjan-white-tertiary-25pc);
+}
+
+.border-white-tertiary-50pc {
+    border-color: var(--arjan-white-tertiary-50pc);
+}
+
+.border-white-tertiary-75pc {
+    border-color: var(--arjan-white-tertiary-75pc);
 }
 
 
@@ -1177,4 +1425,20 @@ p {
 .grid-border-vertical-8px {
   border-left: 1px solid var(--arjan-white-primary-75pc);
   border-right: 1px solid var(--arjan-white-primary-75pc);
+}
+
+
+
+/* ==========================================================================
+   INNER GRID
+   ========================================================================== */
+
+/* ------------------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------------------ */
+
+.inner-grid-mobile {
+  grid-template-columns: repeat(var(--subcolumns-mobile), calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile)));
+  grid-template-rows: repeat(auto-fill, calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile)));
+  gap: var(--inner-grid-gap-mobile);
 }
