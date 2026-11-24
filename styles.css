@@ -1578,6 +1578,7 @@ p {
 .inner-grid-mobile {
   grid-template-columns: repeat(var(--subcolumns-mobile), calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile)));
   grid-template-rows: repeat(auto-fill, calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile)));
+  grid-auto-rows: calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile));
   gap: var(--inner-grid-gap-mobile);
   padding: var(--inner-grid-padding-mobile)
 }
