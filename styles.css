@@ -1619,25 +1619,25 @@ p {
    ========================================================================== */
 
 .skip-one-row-mobile {
-  margin-top: var(--one-row-mobile);
+  padding-top: var(--one-row-mobile);
 }
 
 .skip-two-row-mobile {
-  margin-top: var(--two-row-mobile);
+  padding-top: var(--two-row-mobile);
 }
 
 .skip-three-row-mobile {
-  margin-top: var(--three-row-mobile);
+  padding-top: var(--three-row-mobile);
 }
 
 .skip-four-row-mobile {
-  margin-top: var(--four-row-mobile);
+  padding-top: var(--four-row-mobile);
 }
 
 .skip-five-row-mobile {
-  margin-top: var(--five-row-mobile);
+  padding-top: var(--five-row-mobile);
 }
 
 .skip-six-row-mobile {
-  margin-top: var(--six-row-mobile);
+  padding-top: var(--six-row-mobile);
 }
