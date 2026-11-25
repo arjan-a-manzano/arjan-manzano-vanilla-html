@@ -1641,3 +1641,10 @@ p {
 .skip-six-row-mobile {
   padding-top: var(--six-row-mobile);
 }
+
+
+
+
+.list-reduced-indent {
+  padding-left: 20px;
+}
