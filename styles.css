@@ -380,6 +380,26 @@
   --inner-grid-padding-mobile: 8px;
   --total-padding-mobile: calc(calc(var(--outer-border-width-mobile) + var(--inner-grid-padding-mobile)) * 2);
   --inner-grid-gap-mobile: 4px;
+
+  /* 
+    1. "total-padding": For both left and right sides, add their a) custom grid border width and b) inner grid padding
+    2. "inner grid area": Subtract screen width by total-padding
+
+    NOTE: the original columns are 4 (mobile), 8 (tablet), and 16 (desktop)
+    "subcolumns": They have been divided further into 12 (mobile), 16 (tablet portrait) or 24 (tablet landscape), and 32 (desktop)
+
+    3. "total gaps width": Multiply inner-grid-gap by number of subcolumns
+    4. "inner grid area without gaps": Subtract inner grid area by total gaps width
+    5. "inner-grid-column-width": Divide inner grid area without gaps by number of subcolumns
+  */
+  --inner-grid-column-width-mobile: calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile));
+
+  --one-row-mobile: calc((var(--inner-grid-column-width-mobile) * 1) + (var(--inner-grid-gap-mobile) * 1));
+  --two-row-mobile: calc((var(--inner-grid-column-width-mobile) * 2) + (var(--inner-grid-gap-mobile) * 2));
+  --three-row-mobile: calc((var(--inner-grid-column-width-mobile) * 3) + (var(--inner-grid-gap-mobile) * 3));
+  --four-row-mobile: calc((var(--inner-grid-column-width-mobile) * 4) + (var(--inner-grid-gap-mobile) * 4));
+  --five-row-mobile: calc((var(--inner-grid-column-width-mobile) * 5) + (var(--inner-grid-gap-mobile) * 5));
+  --six-row-mobile: calc((var(--inner-grid-column-width-mobile) * 6) + (var(--inner-grid-gap-mobile) * 6));
 }
 
 
@@ -1590,4 +1610,34 @@ p {
   grid-auto-rows: auto;
   gap: var(--inner-grid-gap-mobile);
   padding: var(--inner-grid-padding-mobile)
+}
+
+
+
+/* ==========================================================================
+   INNER GRID
+   ========================================================================== */
+
+.skip-one-row-mobile {
+  margin-top: var(--one-row-mobile);
+}
+
+.skip-two-row-mobile {
+  margin-top: var(--two-row-mobile);
+}
+
+.skip-three-row-mobile {
+  margin-top: var(--three-row-mobile);
+}
+
+.skip-four-row-mobile {
+  margin-top: var(--four-row-mobile);
+}
+
+.skip-five-row-mobile {
+  margin-top: var(--five-row-mobile);
+}
+
+.skip-six-row-mobile {
+  margin-top: var(--six-row-mobile);
 }
