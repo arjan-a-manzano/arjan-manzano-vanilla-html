@@ -1582,3 +1582,12 @@ p {
   gap: var(--inner-grid-gap-mobile);
   padding: var(--inner-grid-padding-mobile)
 }
+
+/* NOTE: will merge this with mobile utility soon */
+.inner-grid {
+  grid-template-columns: repeat(var(--subcolumns-mobile), calc(calc((100vw - var(--total-padding-mobile)) - var(--subcolumns-mobile) * var(--inner-grid-gap-mobile)) / var(--subcolumns-mobile)));
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  gap: var(--inner-grid-gap-mobile);
+  padding: var(--inner-grid-padding-mobile)
+}
